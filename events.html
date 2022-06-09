@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+        }
+        #background{
+            align-items: center;
+            background-color: #4bbaff;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: available;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            font-size: large;
+            display: block;
+            color: white;
+            padding: 18px 20px;
+            background-color: #333;
+            text-align: center;
+            text-decoration: none;
+            border-left: 1px solid #bbb;
+        }
+        .special {
+            font-size: large;
+            display: block;
+            color: white;
+            padding: 18px 20px;
+            background-color: #333;
+            text-align: center;
+            text-decoration: none;
+            border-left: 1px solid #bbb;
+            border-bottom-left-radius: 8px;
+        }
+        li b {
+            display: block;
+            color: black;
+            padding: 70px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: xxx-large;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+        .content {
+            margin: 0 auto auto;
+            width: 80%;
+            display: grid;
+            gap: 15px;
+            padding-bottom: 40px;
+        }
+        .rectangle {
+            grid-column-start: 12;
+            grid-row-start: 1;
+            border-radius: 16px;
+            text-align: center;
+            margin: 10px 0 0;
+            size: portrait;
+            border-style: solid;
+            border-width: 5px;
+            width: 600px;
+            height: 350px;
+            border-color: #3b3b3b;
+            background-color: #fff4dd;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+        }
+    </style>
+</head>
+<body>
+<div id="background">
+    <div id="banner" style="width: 100%; overflow: hidden;">
+        <div style="float: right; height: 50px">
+            <ul draggable="false">
+                <li><a draggable="false" class="eng" href="index.html">Home</a></li>
+                <li><a class="eng" lang="en">About</a></li>
+                <li><a class="eng" lang="en">Admission</a></li>
+                <li><a class="eng active" lang="en" href="events.html">Events</a></li>
+                <li><a class="eng special" lang="en" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div style="float: left">
+            <ul>
+                <li><b id="schoolName" style="font-size: xx-large; font-weight: bolder">Secondary Grammar School of St.Joseph</b></li>
+                <li><img src="logo.png" alt="" style="max-height: 200px"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="rectangle" style="grid-row-start: 1; grid-column-start: 1">
+            <p style="font-size: xxx-large; margin-top: 20px">
+                Science Show
+            </p>
+            <p style="font-size: x-large; line-height: 30px; padding: 15px">
+                • 29th April 2022 <br>
+                • 8:00 – 12:00 <br>
+                • Science stuff in classes <br>
+                • Students can go from class to class
+            </p>
+        </div>
+        <div class="rectangle" style="grid-row-start: 1; grid-column-start: 2">
+            <p style="font-size: xxx-large; margin-top: 20px">
+                A Day In Space
+            </p>
+            <p style="font-size: x-large; line-height: 30px; padding: 15px">
+                • 18th May 2022 <br>
+                • NASA <br>
+                • Build Your Own Cutout Moon! <br>
+                <a href="https://www.nasa.gov/sites/default/files/atoms/files/paper_moon_cut_out-01.pdf">Cutout Moon</a>
+            </p>
+        </div>
+        <div class="rectangle" style="grid-row-start: 2; grid-column-start: 1">
+            <p style="font-size: xxx-large; margin-top: 20px">
+                Movie Night
+            </p>
+            <p style="font-size: x-large; line-height: 30px; padding: 15px">
+                • I.A, I.B - 6th May 2022; I.C, I.D – 13th May 2022 <br>
+                • 18:00 – 20:30 <br>
+                • In seminar room I <br>
+                • Bring some movis you want to watch on a USB, then we’ll vote which one to watch <br>
+                • You can also bring snacks you want
+            </p>
+        </div>
+        <div class="rectangle" style="grid-row-start: 2; grid-column-start: 2">
+            <p style="font-size: xxx-large; margin-top: 20px">
+                Field Trip to Paris
+            </p>
+            <p style="font-size: x-large; line-height: 30px; padding: 15px">
+                • 13th – 16th June 2022 <br>
+                • 7:30 – 15:30 <br>
+                • Visit the iconic the Eiffel Tower, the Louvre Museum, Notre-Dame Cathedral! <br>
+                • 50€ per person - deadline: 27th May
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer>
+</footer>
+</html>

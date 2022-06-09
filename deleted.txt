@@ -1,0 +1,45 @@
+CSS
+#buttonThemeToggle{
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+
+JS
+function executeButtonThemeToggle(){
+let button = document.getElementById("buttonThemeToggle")
+button.addEventListener("click", themeSwitch)
+}
+function themeSwitch(){
+    let theme = document.getElementsByTagName("link")[0];
+    let img = document.getElementsByTagName("logoImg")[0];
+    if (theme.getAttribute("href") === "dark.css") {
+        theme.setAttribute("href", "index.css");
+    }
+    else {
+        theme.setAttribute("href", "dark.css");
+    }
+}
+executeButtonThemeToggle()
+
+function toSk(){
+    document.getElementsByClassName("eng").display = "none";
+    document.getElementsByClassName("sk").display = "block";
+}
+function toEn(){
+    document.getElementsByClassName("sk").display = "none";
+    document.getElementsByClassName("eng").display = "block";
+
+}
+
+HTML
+<input id="buttonThemeToggle" type="image" src="" alt="Dark Theme">
+
+
+    <div id="background">
+        <div id="logo">
+            <a href="http://localhost:63342/SchoolWebsite/index.html" title="Home">
+                <img id="logoImg" src="logo.png" alt="Gymnázium Jána Papánka">
+            </a>
+        </div>
+    </div>
